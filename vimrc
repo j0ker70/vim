@@ -6,6 +6,9 @@ autocmd! bufwritepost vimrc ++nested source %
 call plug#begin('~/.vim/plugged')
 
 Plug 'embark-theme/vim', { 'as': 'embark' }
+Plug 'itchyny/lightline.vim'
+Plug 'ap/vim-css-color'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
@@ -13,7 +16,8 @@ call plug#end()
 let mapleader = " "
 
 " colorscheme
-colorscheme embark
+colorscheme PaperColor
+set background=dark
 
 " setting linenumbers and relative line numbers
 set nu rnu
@@ -35,6 +39,11 @@ set smarttab
 set autoindent
 set smartindent
 
+" statusline with lightline
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'embark',
+      \ }
 
 " setting keymaps
 
@@ -46,4 +55,10 @@ nnoremap ,case dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
 
 " load template for c++
 nnoremap ,temp :-1r ~/Documents/codes/templates/cpp.cpp<CR>8jcc
+
+" comment toggle using NerdCommenter Plugin
+" comment out a line or a block by pressing ctrl-/
+imap <c-_> <esc><leader>c<space>a
+vmap <c-_> <leader>c<space>
+nmap <c-_> <leader>c<space>
 

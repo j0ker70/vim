@@ -53,13 +53,15 @@ let g:lightline = {
 nnoremap <F5> :%y+<CR>
 
 " load snippet for cases
-nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
+autocmd BufNewFile,BufRead *.cpp nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
 
 " load template for c++
-nnoremap ,tm :-1r ~/Documents/codes/templates/cpp.cpp<CR>8jcc
+autocmd BufNewFile,BufRead *.cpp nnoremap ,tm :-1r ~/Documents/codes/templates/cpp.cpp<CR>8jcc
 
 " load template for latex
-nnoremap ,tx :-1r ~/.vim/snips/latex/latex.tex<CR>
+autocmd BufNewFile,BufRead *.tex nnoremap ,tx :-1r ~/.vim/snips/latex/latex.tex<CR>
+
+
 
 " comment toggle using NerdCommenter Plugin
 " comment out a line or a block by pressing ctrl-/
@@ -69,3 +71,7 @@ nmap <c-_> <leader>c<space>
 
 " set mouse option
 set mouse=a
+
+" start scrolling when cursor is 8 lines above the bottom
+set scrolloff=8
+

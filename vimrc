@@ -11,6 +11,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
+Plug 'gruvbox-community/gruvbox'
 
 call plug#end()
 

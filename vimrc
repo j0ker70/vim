@@ -49,25 +49,8 @@ let g:lightline = {
 
 " setting keymaps
 
-" copy all to system clipboard
-nnoremap <F5> :%y+<CR>
+so /home/pial/.vim/keymaps.vim
 
-" load snippet for cases
-autocmd BufNewFile,BufRead *.cpp nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
-
-" load template for c++
-autocmd BufNewFile,BufRead *.cpp nnoremap ,tm :-1r ~/Documents/codes/templates/cpp.cpp<CR>8jcc
-
-" load template for latex
-autocmd BufNewFile,BufRead *.tex nnoremap ,tx :-1r ~/.vim/snips/latex/latex.tex<CR>
-
-
-
-" comment toggle using NerdCommenter Plugin
-" comment out a line or a block by pressing ctrl-/
-imap <c-_> <esc><leader>c<space>a
-vmap <c-_> <leader>c<space>
-nmap <c-_> <leader>c<space>
 
 " set mouse option
 set mouse=a

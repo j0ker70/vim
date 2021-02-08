@@ -15,7 +15,7 @@ autocmd BufNewFile,BufRead *.tex nnoremap ,tx :-1r ~/.vim/snips/latex/latex.tex<
 autocmd BufNewFile,BufRead *.tex nnoremap <leader>p :!pdflatex %<CR>
 
 " open pdf file with zathura
-autocmd BufNewFile,BufRead *.tex nnoremap <leader>z :!zathura %:r.pdf &<CR>
+autocmd BufNewFile,BufRead *.tex nnoremap <leader>z :!zathura %:r.pdf &<CR><CR>
 
 " spell checking for latex files
 autocmd BufNewFile,BufRead *.tex set spell

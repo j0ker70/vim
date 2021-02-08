@@ -20,9 +20,11 @@ autocmd BufNewFile,BufRead *.tex nnoremap <leader>z :!zathura %:r.pdf &<CR>
 " spell checking for latex files
 autocmd BufNewFile,BufRead *.tex set spell
 
-" each line of latex file should be at most 120 letters
+" each line of latex file should be at most 120 letters marker
 autocmd BufNewFile,BufRead *.tex set colorcolumn=120
 
+" each line of latex file should be at most 120 letters
+autocmd BufNewFile,BufRead *.tex set textwidth=120
 
 " comment toggle using NerdCommenter Plugin
 " comment out a line or a block by pressing ctrl-/

@@ -8,10 +8,13 @@ nnoremap <leader>v "+p
 autocmd BufNewFile,BufRead *.cpp nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
 
 " load template for c++
-autocmd BufNewFile,BufRead *.cpp nnoremap ,tm :-1r ~/Documents/codes/templates/cpp.cpp<CR>8jcc
+autocmd BufNewFile,BufRead *.cpp nnoremap ,tm :-1r ~/.vim/snips/c++/template.cpp<CR>8jcc
+
+" load modular functions
+autocmd BufNewFile,BufRead *.cpp nnoremap ,ma :-1r ~/.vim/snips/c++/math.cpp<CR>25j
 
 " load template for latex
-autocmd BufNewFile,BufRead *.tex nnoremap ,tx :-1r ~/.vim/snips/latex/latex.tex<CR>
+autocmd BufNewFile,BufRead *.tex nnoremap ,tx :-1r ~/.vim/snips/latex/template.tex<CR>
 
 " compile tex file
 autocmd BufNewFile,BufRead *.tex nnoremap <leader>p :!pdflatex %<CR>

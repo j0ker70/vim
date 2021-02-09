@@ -1,6 +1,8 @@
-
-" copy all to system clipboard
+" copy file to system clipboard
 nnoremap <F5> :%y+<CR>
+
+" paste from system clipboard
+nnoremap <leader>v "+p
 
 " load snippet for cases
 autocmd BufNewFile,BufRead *.cpp nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
@@ -16,15 +18,6 @@ autocmd BufNewFile,BufRead *.tex nnoremap <leader>p :!pdflatex %<CR>
 
 " open pdf file with zathura
 autocmd BufNewFile,BufRead *.tex nnoremap <leader>z :!zathura %:r.pdf &<CR><CR>
-
-" spell checking for latex files
-autocmd BufNewFile,BufRead *.tex set spell
-
-" each line of latex file should be at most 120 letters marker
-autocmd BufNewFile,BufRead *.tex set colorcolumn=120
-
-" each line of latex file should be at most 120 letters
-autocmd BufNewFile,BufRead *.tex set textwidth=120
 
 " comment toggle using NerdCommenter Plugin
 " comment out a line or a block by pressing ctrl-/

@@ -6,7 +6,6 @@ autocmd! bufwritepost vimrc ++nested source %
 " Plugins installed using vim-plug
 call plug#begin('~/.vim/plugged')
 
-Plug 'embark-theme/vim', { 'as': 'embark' }
 Plug 'itchyny/lightline.vim'
 Plug 'ap/vim-css-color'
 Plug 'preservim/nerdcommenter'

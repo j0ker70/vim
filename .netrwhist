@@ -1,5 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =8
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/pial/Documents/coding/random'
+let g:netrw_dirhist_0='/home/pial/Documents/coding'
+let g:netrw_dirhist_9='/home/pial/Documents/coding/random'
 let g:netrw_dirhist_8='/home/pial/.vim/plugin'
 let g:netrw_dirhist_7='/home/pial/Documents/codes/tfc1'
 let g:netrw_dirhist_6='/home/pial/Documents/codes/practice'
@@ -7,4 +10,3 @@ let g:netrw_dirhist_5='/home/pial/Documents/Thesis/ESDL_ABC_FDCOP'
 let g:netrw_dirhist_4='/home/pial/.vim/colors'
 let g:netrw_dirhist_3='/home/pial/.config'
 let g:netrw_dirhist_2='/home/pial/Documents/.sqlInjection/notes'
-let g:netrw_dirhist_1='/home/pial/.vim/autoload'

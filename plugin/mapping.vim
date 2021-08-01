@@ -30,3 +30,14 @@ nmap <c-_> <leader>c<space>
 
 " open a terminal in a vertical split"
 nmap <leader>T :vert term<CR>
+
+" moving multiple lines up and down
+
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+" moving single line up and down
+
+nnoremap <leader>j :m .+1<CR>==
+nnoremap <leader>k :m .-2<CR>==
+

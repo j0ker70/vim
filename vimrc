@@ -11,6 +11,9 @@ Plug 'ap/vim-css-color'
 Plug 'preservim/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 Plug 'gruvbox-community/gruvbox'
+Plug 'vimwiki/vimwiki'
+Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+
 
 call plug#end()
 
@@ -21,5 +24,4 @@ let mapleader = " "
 " functionality.
 filetype indent plugin on
 syntax on
-
 

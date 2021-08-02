@@ -1,3 +1,5 @@
+set filetype=tex
+
 " spell checking for latex files
 set spell
 
@@ -13,4 +15,13 @@ let g:lightline = {
       \ 'colorscheme': 'PaperColor',
       \ }
 
-set filetype=tex
+
+
+" load template for latex
+nnoremap ,tx :-1r ~/.vim/snips/latex/template.tex<CR>
+
+" compile tex file
+nnoremap <leader>p :!pdflatex %<CR>
+
+" open pdf file with zathura
+nnoremap <leader>z :!zathura %:r.pdf &<CR><CR>

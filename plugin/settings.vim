@@ -71,3 +71,8 @@ let g:vimwiki_ext2syntax = {'.md': 'markdown', '.markdown': 'markdown', '.mdown'
 " This defines one wiki located at ~/my_site/. When converted to HTML, the
 " produced HTML files go to ~/public_html/ .
 let g:vimwiki_list = [{'path': '~/Documents/MyWiki/', 'path_html': '~/Documents/MyWiki/html/'}]
+
+" Netrw settings
+
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0

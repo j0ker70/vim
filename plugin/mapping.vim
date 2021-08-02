@@ -4,24 +4,6 @@ nnoremap <F5> :%y+<CR>
 " paste from system clipboard
 nnoremap <leader>v "+p
 
-" load snippet for cases
-autocmd FileType cpp nnoremap ,cs dd:-1r ~/.vim/snips/c++/case.cpp<CR>>4jjjjcc
-
-" load template for c++
-autocmd FileType cpp nnoremap ,tm :-1r ~/.vim/snips/c++/template.cpp<CR>8jcc
-
-" load modular functions
-autocmd FileType cpp nnoremap ,ma :-1r ~/.vim/snips/c++/math.cpp<CR>25j
-
-" load template for latex
-autocmd FileType tex nnoremap ,tx :-1r ~/.vim/snips/latex/template.tex<CR>
-
-" compile tex file
-autocmd FileType tex nnoremap <leader>p :!pdflatex %<CR>
-
-" open pdf file with zathura
-autocmd FileType tex nnoremap <leader>z :!zathura %:r.pdf &<CR><CR>
-
 " comment toggle using NerdCommenter Plugin
 " comment out a line or a block by pressing ctrl-/
 imap <c-_> <esc><leader>c<space>a
@@ -41,3 +23,26 @@ vnoremap K :m '<-2<CR>gv=gv
 nnoremap <leader>j :m .+1<CR>==
 nnoremap <leader>k :m .-2<CR>==
 
+
+" Moving between splits
+
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
+" Resizing Splits
+
+" up
+nnoremap <ESC>[1;5A :resize +1<CR>
+" down
+nnoremap <ESC>[1;5B :resize -1<CR>
+" left
+nnoremap <ESC>[1;5D :vertical resize +1<CR>
+" right
+nnoremap <ESC>[1;5C :vertical resize -1<CR>
+
+
+" Open netrw
+nnoremap <leader>L :Lex!<CR>:vertical resize 30<CR>

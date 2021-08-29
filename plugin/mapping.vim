@@ -46,3 +46,7 @@ nnoremap <ESC>[1;5C :vertical resize -1<CR>
 
 " Open netrw
 nnoremap <leader>L :Lex!<CR>:vertical resize 30<CR>
+
+autocmd BufRead,BufNewFile zathurarc set ft=sh
+
+autocmd BufRead,BufNewFile *.md set ft=markdown

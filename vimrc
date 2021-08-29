@@ -13,6 +13,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'gruvbox-community/gruvbox'
 Plug 'vimwiki/vimwiki'
 Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+Plug 'dylanaraps/wal.vim'
 
 
 call plug#end()

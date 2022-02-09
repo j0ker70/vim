@@ -11,9 +11,10 @@ Plug 'ap/vim-css-color'
 Plug 'preservim/nerdcommenter'
 Plug 'sheerun/vim-polyglot'
 Plug 'gruvbox-community/gruvbox'
-Plug 'vimwiki/vimwiki'
-Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
-Plug 'dylanaraps/wal.vim'
+Plug 'mboughaba/i3config.vim'
+" Plug 'vimwiki/vimwiki'
+" Plug 'instant-markdown/vim-instant-markdown', {'for': 'markdown', 'do': 'yarn install'}
+" Plug 'dylanaraps/wal.vim'
 
 
 call plug#end()

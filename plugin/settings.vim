@@ -1,6 +1,9 @@
 " colorscheme
-colorscheme wal
+colorscheme dracula
 "set background=dark
+
+" transparent
+hi Normal guibg=NONE ctermbg=NONE
 
 " setting linenumbers and relative line numbers
 set nu rnu
@@ -81,3 +84,8 @@ let g:netrw_banner = 0
 if $TERM == 'alacritty'
   set ttymouse=sgr
 endif
+
+aug i3config_ft_detection
+  au!
+  au BufNewFile,BufRead ~/.config/i3/config set filetype=i3config
+aug end

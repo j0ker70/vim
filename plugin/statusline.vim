@@ -1,7 +1,7 @@
 " statusline with lightline
 set laststatus=2
-"let g:lightline = {
-      "\ 'colorscheme': 'dracula',
-      "\ }
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 "set statusline=%f

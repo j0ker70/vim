@@ -26,6 +26,9 @@ set ignorecase smartcase
 " shows command in the status bar
 set showcmd
 
+" highlight current line
+set cursorline
+
 " menus in suggestions
 set wildmenu
 

@@ -1,8 +1,5 @@
 set nocompatible
 
-" Auto source vimrc when made changes in vimrc
-autocmd! bufwritepost vimrc ++nested source %
-
 " Plugins installed using vim-plug
 call plug#begin('~/.vim/plugged')
 

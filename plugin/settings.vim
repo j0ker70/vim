@@ -1,9 +1,9 @@
 " colorscheme
-colorscheme dracula
-"set background=dark
+colorscheme gruvbox
+set background=dark
 
 " transparent
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
 " setting linenumbers and relative line numbers
 set nu rnu
